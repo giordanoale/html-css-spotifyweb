@@ -4,3 +4,45 @@ body {
   box-sizing: border-box;
   background-color: #141A22;
 }
+
+/* intestazione */
+header {
+  background-color: rgba(0,0,0,0.5);
+  height: 100px;
+  width: calc(100% - 300px);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* /intestazione */
+
+/* corpo principale */
+main {
+  display: flex;
+  height: 100vh;
+}
+/* /corpo principale */
+
+/* pagina principale */
+.main_page {
+  overflow: auto;
+}
+/* /pagina principale */
+
+/* barra laterale */
+aside {
+width: 300px;
+height: calc(100% - 100px);
+background-color: #000000;
+}
+/* /barra laterale */
+
+/* player */
+.player {
+  background-color: #282828;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+/* /player */
