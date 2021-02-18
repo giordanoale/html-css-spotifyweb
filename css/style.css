@@ -3,16 +3,31 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #141A22;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* intestazione */
 header {
   background-color: rgba(0,0,0,0.5);
-  height: 100px;
-  width: calc(100% - 300px);
+  height: 90px;
+  line-height: 90px;
+  vertical-align: middle;
+  text-align: right;
+  width: calc(100% - 200px);
   position: fixed;
   top: 0;
   right: 0;
+}
+
+.btn_upgrade {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
 }
 /* /intestazione */
 
@@ -31,9 +46,15 @@ main {
 
 /* barra laterale */
 aside {
-width: 300px;
+width: 200px;
 height: calc(100% - 100px);
 background-color: #000000;
+}
+
+.logo_img img {
+  width: 60%;
+  margin-top: -37px;
+  margin-left: 20px;
 }
 /* /barra laterale */
 
