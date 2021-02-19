@@ -60,6 +60,8 @@ aside {
 .nav_container {
   display: flex;
   flex-direction: column;
+  height: calc(100% - 60px);
+  overflow: hidden;
 }
 
 .nav_container a {
@@ -78,6 +80,7 @@ aside {
   font-size: 15px;
   padding-left: 20px;
   color: #666666;
+  border-left: 3px solid transparent;
   margin-top: 10px;
 }
 
@@ -85,22 +88,25 @@ aside {
   height: 25px;
   line-height: 25px;
   vertical-align: middle;
-  fill: #666666;
+  opacity: 0.8;
 }
 
 #selected {
-  border-left: 3px solid #9ee23f;
+  border-color: #9ee23f;
   fill: #fff;
   color: #fff;
+  opacity: 1;
 }
 
 .playlist_menu {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .playlist_menu ul {
   padding: 1px;
   margin-top: auto;
+  height: calc(100% - 19px);
   overflow: auto;
 }
 
@@ -141,6 +147,8 @@ a:hover {
 .bottom_menu {
   margin-left: 20px;
   font-size: 12px;
+  margin-top: auto;
+  margin-bottom: 5px;
 }
 
 .bottom_menu span {
@@ -160,7 +168,7 @@ a:hover {
 .profile_img {
   background-color: #666666;
   height: 17px;
-  width: 17px;
+  width: 18px;
   border-radius: 50%;
   margin-left: 3px;
 }
@@ -179,5 +187,46 @@ a:hover {
   width: 100%;
   position: fixed;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.now_playing {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.song {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 16px 0 8px;
+}
+
+.now_playing img {
+  height: 50px;
+}
+
+.song_name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.song_author {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.favourite {
+  color: #666666;
+  font-size: 20px;
+}
+
+.fa-folder {
+  margin-left: 5px;
 }
 /* /player */
