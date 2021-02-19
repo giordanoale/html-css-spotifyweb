@@ -174,7 +174,9 @@ a:hover {
 }
 
 .bottom_menu hr {
-  color: #666666;
+  background-color: #666666;
+  height: 1px;
+  border: 0;
   width: 90%;
   margin-left: -2px;
 }
@@ -192,6 +194,7 @@ a:hover {
   align-items: center;
 }
 
+/* sezione in ascolto */
 .now_playing {
   display: flex;
   margin-left: 20px;
@@ -229,4 +232,85 @@ a:hover {
 .fa-folder {
   margin-left: 5px;
 }
+/* /sezione in ascolto */
+
+/* sezione controlli */
+.play_controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+
+.controls i {
+  margin-left: 10px;
+  opacity: 0.8;
+}
+
+.controls i:hover {
+  opacity: 1;
+}
+
+.play {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.trackline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trackline .empty_track {
+  color: #666666;
+  background-color: #666666;
+  height: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.full_track {
+  color: #fff;
+  background-color: #fff;
+  height: 3px;
+  width: 30%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.full_track i {
+  position: absolute;
+  font-size: 10px;
+  right: -4px;
+  top: -4px;
+  display: none;
+}
+
+.empty_track:hover .full_track {
+  background-color: #1CB955;
+}
+
+.empty_track:hover .full_track i {
+  display: inline-block;
+}
+
+.trackline span {
+  color: #fff;
+  font-size: 12px;
+}
+/* /sezione controlli */
 /* /player */
