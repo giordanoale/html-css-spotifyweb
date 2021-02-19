@@ -46,9 +46,9 @@ main {
 
 /* barra laterale */
 aside {
-width: 200px;
-height: calc(100% - 100px);
-background-color: #000000;
+  width: 200px;
+  height: calc(100% - 100px);
+  background-color: #000000;
 }
 
 .logo_img img {
@@ -95,11 +95,13 @@ background-color: #000000;
 }
 
 .playlist_menu {
-  overflow: auto;
+  margin-top: 20px;
 }
 
 .playlist_menu ul {
   padding: 1px;
+  margin-top: auto;
+  overflow: auto;
 }
 
 .playlist_menu ul li {
@@ -117,6 +119,7 @@ background-color: #000000;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 15px;
+  padding-left: 20px;
 }
 
 a.btn_plus {
@@ -133,6 +136,39 @@ a.btn_plus {
 
 a:hover {
   color: #fff;
+}
+
+.bottom_menu {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.bottom_menu span {
+  color: #666666;
+  line height: 20px;
+  vertical-align: middle;
+}
+
+.bottom_menu img {
+  fill: #666666;
+  height: 20px;
+  margin-right: 5px;
+  line height: 20px;
+  vertical-align: middle;
+}
+
+.profile_img {
+  background-color: #666666;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.bottom_menu hr {
+  color: #666666;
+  width: 90%;
+  margin-left: -2px;
 }
 /* /barra laterale */
 
