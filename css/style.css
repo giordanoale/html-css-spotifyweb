@@ -53,8 +53,86 @@ background-color: #000000;
 
 .logo_img img {
   width: 60%;
-  margin-top: -37px;
+  margin-top: 20px;
   margin-left: 20px;
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_container a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.main_menu ul {
+  padding: 1px;
+}
+
+.main_menu ul li {
+  list-style: none;
+  line-height: 25px;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-left: 20px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.main_menu img {
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  fill: #666666;
+}
+
+#selected {
+  border-left: 3px solid #9ee23f;
+  fill: #fff;
+  color: #fff;
+}
+
+.playlist_menu {
+  overflow: auto;
+}
+
+.playlist_menu ul {
+  padding: 1px;
+}
+
+.playlist_menu ul li {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  line-height: 25px;
+  vertical-align: middle;
+  color: #666666;
+  font-size: 14px;
+}
+
+#playlist_title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+a.btn_plus {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: #666666;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+  margin-right: 5px;
+}
+
+a:hover {
+  color: #fff;
 }
 /* /barra laterale */
 
