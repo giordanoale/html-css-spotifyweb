@@ -13,10 +13,11 @@ header {
   line-height: 90px;
   vertical-align: middle;
   text-align: right;
-  width: calc(100% - 200px);
+  width: calc(100% - 170px);
   position: fixed;
   top: 0;
   right: 0;
+  margin-left: auto;
 }
 
 .btn_upgrade {
@@ -49,6 +50,33 @@ main {
 /* pagina principale */
 .main_page {
   overflow: auto;
+  width: 100%;
+}
+
+.container_tab {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.nav_tab ul li{
+  display: inline-block;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav_tab ul li::after {
+  border-bottom: 3px solid transparent;
+}
+
+.nav_tab ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.nav_tab ul li:hover {
+  color: #fff;
+  border-color: #9ee23f;
 }
 /* /pagina principale */
 
@@ -488,6 +516,6 @@ a:hover {
   .first_col {
     margin-top: 10px;
   }
-  
+
 }
 /* /player */
