@@ -13,7 +13,7 @@ header {
   line-height: 90px;
   vertical-align: middle;
   text-align: right;
-  width: calc(100% - 170px);
+  width: calc(100% - 200px);
   position: fixed;
   top: 0;
   right: 0;
@@ -53,6 +53,7 @@ main {
   width: 100%;
 }
 
+/* tab di navigazione */
 .container_tab {
   width: 80%;
   margin: auto;
@@ -66,8 +67,13 @@ main {
   font-size: 14px;
   font-weight: 500;
 }
-.nav_tab ul li::after {
-  border-bottom: 3px solid transparent;
+.nav_tab ul li:after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  height: 3px;
+  width: 50%;
+  margin: auto;
 }
 
 .nav_tab ul li:not(:first-child) {
@@ -76,7 +82,11 @@ main {
 
 .nav_tab ul li:hover {
   color: #fff;
-  border-color: #9ee23f;
+  cursor: pointer;
+}
+
+.nav_tab ul li:hover:after {
+  background-color: #9ee23f;
 }
 /* /pagina principale */
 
@@ -85,6 +95,7 @@ aside {
   width: 200px;
   height: calc(100% - 100px);
   background-color: #000000;
+  flex-shrink: 0;
 }
 
 .logo_img .logo_big {
