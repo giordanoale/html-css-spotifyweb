@@ -389,7 +389,7 @@ a:hover {
 }
 
 .now_playing img {
-  height: 50px;
+  max-width: 50px;
 }
 
 .song_name {
