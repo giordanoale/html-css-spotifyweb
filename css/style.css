@@ -29,6 +29,14 @@ header {
   font-size: 12px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 639px) {
+
+  header {
+    width: calc(100% - 50px);
+  }
+
+}
 /* /intestazione */
 
 /* corpo principale */
@@ -51,10 +59,15 @@ aside {
   background-color: #000000;
 }
 
-.logo_img img {
+.logo_img .logo_big {
   width: 60%;
   margin-top: 20px;
   margin-left: 20px;
+  display: block;
+}
+
+.logo_img .logo_small {
+  display: none;
 }
 
 .nav_container {
@@ -179,6 +192,44 @@ a:hover {
   border: 0;
   width: 90%;
   margin-left: -2px;
+}
+
+@media screen and (max-width: 639px) {
+
+  aside {
+    width: 50px;
+  }
+
+  .logo_img .logo_big {
+    display: none;
+  }
+
+  .logo_img .logo_small {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+  }
+
+  .main_menu a {
+    display: none;
+  }
+
+  .main_menu ul li{
+    padding-left: 10px;
+  }
+
+  .playlist_menu {
+    display: none;
+  }
+
+  .bottom_menu span {
+    display: none;
+  }
+
+  .bottom_menu {
+    margin-bottom: 22px;
+    margin-right: auto;
+  }
 }
 /* /barra laterale */
 
