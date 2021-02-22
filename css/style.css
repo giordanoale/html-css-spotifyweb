@@ -230,6 +230,7 @@ a:hover {
     margin-bottom: 22px;
     margin-right: auto;
   }
+
 }
 /* /barra laterale */
 
@@ -282,6 +283,13 @@ a:hover {
 
 .fa-folder {
   margin-left: 5px;
+}
+
+.line_clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 /* /sezione in ascolto */
 
@@ -382,6 +390,14 @@ a:hover {
   opacity: 0.8;
 }
 
+.first_col, .second_col {
+  display: flex;
+  align-items: center;
+}
+
+.second_col {
+  margin-left: 10px;
+}
 .audio_controls i:not(:first-child) {
   margin-left: 10px;
 }
@@ -425,5 +441,53 @@ a:hover {
   display: inline-block;
 }
 /* /sezione controlli audio */
+@media screen and (max-width: 992px) {
 
+  .trackline .empty_track {
+    width: 200px;
+  }
+
+  .now_playing {
+    margin-right: 20px;
+  }
+
+  .audio_controls {
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+
+  .audio_controls {
+    margin-right: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .fa-list, .fa-chromecast {
+    align-self: flex-end;
+  }
+
+  .play_controls {
+    justify-content: space-between;
+  }
+
+  .controls i:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  .trackline .empty_track {
+    width: 100px;
+  }
+
+  .second_col {
+    order: -1;
+  }
+
+  .first_col {
+    margin-top: 10px;
+  }
+  
+}
 /* /player */
