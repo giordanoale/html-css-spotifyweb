@@ -6,6 +6,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Typo */
+h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tag_line {
+  color: #dddddd;
+  font-size: 12px;
+}
 /* intestazione */
 header {
   background-color: rgba(0,0,0,0.5);
@@ -18,6 +28,7 @@ header {
   top: 0;
   right: 0;
   margin-left: auto;
+  z-index: 10;
 }
 
 .btn_upgrade {
@@ -49,8 +60,9 @@ main {
 
 /* pagina principale */
 .main_page {
-  overflow: auto;
+  height: calc(100% - 100px);
   width: 100%;
+  overflow-y: auto;
 }
 
 /* tab di navigazione */
@@ -88,6 +100,90 @@ main {
 .nav_tab ul li:hover:after {
   background-color: #9ee23f;
 }
+/* /tab di navigazione */
+
+/* sezione album */
+.album_container {
+  width: 95%;
+  margin: auto;
+}
+
+.album_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.album_tile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 180px;
+  margin: 20px;
+}
+
+.album_tile .album_cover {
+  width: 180px;
+}
+
+.album_title {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.album_author {
+  margin-top: 5px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.album_tile .fa-play-circle {
+  position: absolute;
+  color: #fff;
+  font-size: 54px;
+  top: 64px;
+  left: 64px;
+  visibility: hidden;
+}
+
+.album_cover:hover {
+  opacity: 0.5;
+}
+
+.album_cover:hover ~ .fa-play-circle {
+  visibility: visible;
+}
+
+.artist_tile {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  position: relative;
+}
+
+.album_tile .artist_cover {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.artist_name {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 700;
+  max-width: 180px;
+}
+
+.artist_cover:hover {
+  opacity: 0.5;
+}
+
+.artist_cover:hover ~ .fa-play-circle {
+  visibility: visible;
+}
+/* /sezione album */
 /* /pagina principale */
 
 /* barra laterale */
@@ -422,6 +518,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 20;
 }
 
 .audio_controls i {
