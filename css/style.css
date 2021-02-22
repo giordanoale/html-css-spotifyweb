@@ -147,11 +147,12 @@ main {
   visibility: hidden;
 }
 
-.album_cover:hover {
+.album_tile:hover > .album_cover,
+.album_tile:hover > .artist_cover{
   opacity: 0.5;
 }
 
-.album_cover:hover ~ .fa-play-circle {
+.album_tile:hover > .fa-play-circle {
   visibility: visible;
 }
 
@@ -174,14 +175,6 @@ main {
   color: #fff;
   font-weight: 700;
   max-width: 180px;
-}
-
-.artist_cover:hover {
-  opacity: 0.5;
-}
-
-.artist_cover:hover ~ .fa-play-circle {
-  visibility: visible;
 }
 /* /sezione album */
 /* /pagina principale */
