@@ -104,7 +104,7 @@ main {
 }
 
 .nav_tab ul li:hover:after {
-  background-color: #9ee23f;
+  background-color: #2cd165;
 }
 /* /tab di navigazione */
 
@@ -238,7 +238,7 @@ aside {
 }
 
 #selected {
-  border-color: #9ee23f;
+  border-color: #2cd165;
   opacity: 1;
 }
 
@@ -247,7 +247,7 @@ aside {
 }
 
 .main_menu ul li:hover {
-  border-color: #9ee23f;
+  border-color: #2cd165;
 }
 
 .playlist_menu {
