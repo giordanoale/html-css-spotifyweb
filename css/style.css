@@ -192,10 +192,12 @@ main {
 .album_tile:hover > .album_cover,
 .album_tile:hover > .artist_cover{
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .album_tile:hover > .fa-play-circle {
   visibility: visible;
+  transition: 0.5s;
 }
 
 .artist_tile {
