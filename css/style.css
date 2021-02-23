@@ -40,6 +40,12 @@ header {
   margin-right: 10px;
   font-size: 12px;
   font-weight: 500;
+  opacity: 0.8;
+}
+
+.btn_upgrade:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 639px) {
@@ -220,7 +226,6 @@ aside {
   vertical-align: middle;
   font-size: 15px;
   padding-left: 20px;
-  color: #666666;
   border-left: 3px solid transparent;
   margin-top: 10px;
 }
@@ -234,9 +239,15 @@ aside {
 
 #selected {
   border-color: #9ee23f;
-  fill: #fff;
-  color: #fff;
   opacity: 1;
+}
+
+#selected a {
+  color: #fff;
+}
+
+.main_menu ul li:hover {
+  border-color: #9ee23f;
 }
 
 .playlist_menu {
@@ -294,8 +305,13 @@ a:hover {
 
 .bottom_menu span {
   color: #666666;
-  line height: 20px;
+  line-height: 20px;
   vertical-align: middle;
+}
+
+.bottom_menu span:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .bottom_menu img {
@@ -304,6 +320,10 @@ a:hover {
   margin-right: 5px;
   line height: 20px;
   vertical-align: middle;
+}
+
+.bottom_menu img:hover {
+  fill: #fff
 }
 
 .profile_img {
@@ -372,6 +392,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 20;
 }
 
 /* sezione in ascolto */
@@ -407,6 +428,14 @@ a:hover {
 .favourite {
   color: #666666;
   font-size: 20px;
+}
+
+.favourite .fa-heart:hover {
+  color: #2cd165;
+}
+
+.favourite .fa-folder:hover {
+  color: #fff;
 }
 
 .fa-folder {
@@ -511,7 +540,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 20;
 }
 
 .audio_controls i {
