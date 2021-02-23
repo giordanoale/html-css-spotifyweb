@@ -46,6 +46,8 @@ header {
 .btn_upgrade:hover {
   opacity: 1;
   cursor: pointer;
+  transition: 0.5s all;
+  font-size: 14px;
 }
 
 
@@ -193,11 +195,14 @@ main {
 .album_tile:hover > .artist_cover{
   opacity: 0.5;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .album_tile:hover > .fa-play-circle {
   visibility: visible;
   transition: 0.5s;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .artist_tile {
